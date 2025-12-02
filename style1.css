@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#parent{
+    background: linear-gradient(to bottom right, pink, blue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    transform: rotate(30deg);
+}
+#img1{
+    position: absolute;
+    left:20px;
+    transition: transform 2s;
+}
+#img2{
+    position: absolute;
+    left: 90px;
+    transition: transform 2s;
+}
+#img3{
+    position: absolute;
+    left: 160px;
+    transition: transform 2s;
+}
+#img4{
+    position: absolute;
+    left: 230px;
+    transition: transform 2s;
+}
+#img1:hover, #img2:hover, #img3:hover, #img4:hover{
+    z-index: 2;
+    transform: rotate(0deg);
+    border-radius: 20px;
+    border: 1px solid red;
+}
